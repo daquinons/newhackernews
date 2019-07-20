@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default () => {
   return (
     <>
-      <nav className="navbar navbar-custom navbar-light navbar-expand-lg py-1">
+      <nav className="navbar navbar-custom navbar-light navbar-expand-lg py-0">
         <a className="navbar-brand" href="#">
           <img className="logo" src="/static/img/yc_logo.svg" />
           <span className="yc-name">Hacker News</span>
@@ -17,7 +17,7 @@ export default () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon" />
+          <i class="fa fa-navicon" style={{ color: 'rgba(0,0,0,0.85)' }} />
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -68,11 +68,11 @@ export default () => {
         /* change the brand and text color */
         .navbar-custom .navbar-brand,
         .navbar-custom .navbar-text {
-          color: rgba(0, 0, 0, 0.8);
+          color: rgba(0, 0, 0, 1);
         }
         /* change the link color */
         .navbar-custom .navbar-nav .nav-link {
-          color: rgba(0, 0, 0, 0.8);
+          color: rgba(0, 0, 0, 1);
         }
         /* change the color of active or hovered links */
         .navbar-custom .nav-item.active .nav-link,
@@ -93,10 +93,19 @@ export default () => {
         .yc-name {
           margin-left: 0.5rem;
           font-weight: bold !important;
+          color: rgba(0, 0, 0, 0.85);
         }
 
         a {
-          color: black;
+          color: rgba(0, 0, 0, 0.85);
+        }
+
+        .custom-toggler {
+          border-color: rgba(0, 0, 0, 0.85);
+        }
+
+        .fa-navicon {
+          background-color: white;
         }
       `}</style>
     </>
