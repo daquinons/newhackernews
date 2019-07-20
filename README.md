@@ -1,6 +1,6 @@
 # New Hacker News 🚧 WIP 🚧
 
-## Contributions welcome!
+Contributions welcome!
  
 ## How to use
 
