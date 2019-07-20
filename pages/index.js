@@ -1,22 +1,23 @@
-import React from 'react'
-import Link from 'next/link'
+import React from 'react';
+import Layout from '../components/layout';
 import { getFrontpage } from '../services/api';
 
 export default class Index extends React.Component {
-  static async getInitialProps () {
+  static async getInitialProps() {
     const res = await getFrontpage();
-    const json = await res.json()
-    return { stories: json }
+    const json = await res.json();
+    return { stories: json };
   }
 
-  render () {
+  render() {
     return (
-      <div>
-        <h1>Hacker News</h1>
-        {this.props.stories.map(story => {
-          return <p>{story.title}</p>
-        })}
-      </div>
-    )
+      <Layout>
+        <div>
+          {this.props.stories.map(story => {
+            return <p>{story.title}</p>;
+          })}
+        </div>
+      </Layout>
+    );
   }
 }
