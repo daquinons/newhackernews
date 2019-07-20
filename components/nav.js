@@ -17,7 +17,7 @@ export default () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <i class="fa fa-navicon" style={{ color: 'rgba(0,0,0,0.85)' }} />
+          <i className="fa fa-navicon" style={{ color: 'rgba(0,0,0,0.85)' }} />
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -64,6 +64,7 @@ export default () => {
         .navbar-custom {
           font-size: 0.9rem;
           background-color: #ff6600;
+          margin-bottom: 0.75rem;
         }
         /* change the brand and text color */
         .navbar-custom .navbar-brand,
@@ -102,10 +103,6 @@ export default () => {
 
         .custom-toggler {
           border-color: rgba(0, 0, 0, 0.85);
-        }
-
-        .fa-navicon {
-          background-color: white;
         }
       `}</style>
     </>

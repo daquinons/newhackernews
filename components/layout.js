@@ -35,11 +35,25 @@ export default ({ children, title = 'Hacker News' }) => (
       <Nav />
     </header>
 
-    {children}
+    <div className="container">{children}</div>
 
     <footer>
       New Hacker News is not affiliated in any way with Hacker News and
       YCombinator
     </footer>
+    <style jsx>{`
+      footer {
+        text-align: center;
+        padding: 2rem;
+        border-top: 0.15rem solid #ff6600;
+      }
+    `}</style>
+    <style global jsx>{`
+      body {
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 0.85rem;
+        background-color: #f6f6ef;
+      }
+    `}</style>
   </div>
 );
