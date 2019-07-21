@@ -6,7 +6,7 @@ export default () => {
       <nav className="navbar navbar-custom navbar-light navbar-expand-lg py-0">
         <a className="navbar-brand" href="#">
           <img className="logo" src="/static/img/yc_logo.svg" />
-          <span className="yc-name">Hacker News</span>
+          <span className="yc-name">New Hacker News</span>
         </a>
         <button
           className="navbar-toggler custom-toggler"

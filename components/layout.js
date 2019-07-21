@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Nav from './nav';
 
-export default ({ children, title = 'Hacker News' }) => (
+export default ({ children, title = 'New Hacker News' }) => (
   <div>
     <Head>
       <title>{title}</title>
