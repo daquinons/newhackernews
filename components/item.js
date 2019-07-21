@@ -1,11 +1,9 @@
-import Link from 'next/link';
-
 const Item = ({ item }) => {
   return (
     <div>
-      <Link href={item.url}>
-        <a className="item-url">{item.title}</a>
-      </Link>{' '}
+      <a href={item.url} className="item-url">
+        {item.title}
+      </a>{' '}
       <span className="domain-text">({item.domain})</span>
       <p className="item-subtext">
         {item.points} points by {item.user} {item.time_ago} |{' '}
@@ -13,12 +11,14 @@ const Item = ({ item }) => {
       </p>
       <style jsx>{`
         .item-url {
-          text-decoration: none;
           color: black;
         }
-        .item-url:hover,
+        .item-url:hover {
+          color: #828282;
+          text-decoration: none;
+        }
         .item-url:visited {
-          color: rgba(0, 0, 0, 0.5) !important;
+          color: #828282;
         }
         .domain-text {
           color: #828282;
