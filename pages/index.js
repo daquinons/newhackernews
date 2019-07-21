@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout';
+import Item from '../components/item';
 import { getFrontpage } from '../services/api';
 
 export default class Index extends React.Component {
@@ -13,8 +14,8 @@ export default class Index extends React.Component {
     return (
       <Layout>
         <div>
-          {this.props.stories.map(story => {
-            return <p>{story.title}</p>;
+          {this.props.stories.map((story, index) => {
+            return <Item key={index} item={story} />;
           })}
         </div>
       </Layout>
