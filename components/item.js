@@ -1,8 +1,8 @@
-const Item = ({ item }) => {
+const Item = ({ itemNumber, item }) => {
   return (
     <div>
       <a href={item.url} className="item-url">
-        {item.title}
+        <span className="item-subtext">{itemNumber}. </span> {item.title}
       </a>{' '}
       <span className="domain-text">({item.domain})</span>
       <p className="item-subtext">
