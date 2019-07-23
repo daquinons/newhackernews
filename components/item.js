@@ -11,8 +11,8 @@ const Item = ({ itemNumber, item }) => {
       </p>
       <style jsx>{`
         .item-url {
-          color: rgba(0, 0, 0, 0.95);
-          font-weight: 400;
+          color: rgba(0, 0, 0);
+          font-size: 1.6rem;
         }
         .item-url:hover {
           color: #828282;
