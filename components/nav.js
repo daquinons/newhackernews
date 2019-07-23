@@ -17,7 +17,20 @@ export default () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <i className="fa fa-navicon" style={{ color: 'rgba(0,0,0,0.85)' }} />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            focusable="false"
+            width="1.6rem"
+            height="1.5rem"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 1536 1280"
+          >
+            <path
+              d="M1536 1088v128q0 26-19 45t-45 19H64q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19H64q-26 0-45-19T0 704V576q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19H64q-26 0-45-19T0 192V64q0-26 19-45T64 0h1408q26 0 45 19t19 45z"
+              fill="rgba(0,0,0,0.8)"
+            />
+          </svg>
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -62,7 +75,7 @@ export default () => {
       </nav>
       <style jsx>{`
         .navbar-custom {
-          font-size: 0.9rem;
+          font-size: 1.5rem;
           background-color: #ff6600;
           margin-bottom: 0.75rem;
         }
@@ -70,6 +83,7 @@ export default () => {
         .navbar-custom .navbar-brand,
         .navbar-custom .navbar-text {
           color: rgba(0, 0, 0, 1);
+          font-size: 2rem;
         }
         /* change the link color */
         .navbar-custom .navbar-nav .nav-link {
@@ -87,7 +101,7 @@ export default () => {
 
         .logo {
           align-self: center;
-          height: 1.5rem;
+          height: 2.5rem;
           border: 0.15rem white solid;
         }
 

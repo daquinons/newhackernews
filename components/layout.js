@@ -14,12 +14,6 @@ export default ({ children, title = 'New Hacker News' }) => (
         crossOrigin="anonymous"
       />
       <link
-        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        rel="stylesheet"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-        crossOrigin="anonymous"
-      />
-      <link
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap"
         rel="stylesheet"
       />
@@ -54,20 +48,19 @@ export default ({ children, title = 'New Hacker News' }) => (
       }
     `}</style>
     <style global jsx>{`
+      html {
+        font-size: 10px;
+      }
+      @media (max-width: 576px) {
+        html {
+          font-size: 12px;
+        }
+      }
+
       body {
         font-family: 'Source Sans Pro', sans-serif;
-        font-size: 1rem;
+        font-size: 1.5rem;
         background-color: #f6f6ef;
-      }
-      @media (min-width: 576px) {
-        body {
-          font-size: 1.25rem;
-        }
-      }
-      @media (min-width: 768px) {
-        body {
-          font-size: 1.1rem;
-        }
       }
     `}</style>
   </div>

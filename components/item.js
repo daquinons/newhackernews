@@ -23,11 +23,11 @@ const Item = ({ itemNumber, item }) => {
         }
         .domain-text {
           color: #828282;
-          font-size: 0.7rem;
+          font-size: 0.7em;
         }
         .item-subtext {
           color: #828282;
-          font-size: 0.8rem;
+          font-size: 0.8em;
         }
       `}</style>
     </div>
