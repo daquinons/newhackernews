@@ -19,6 +19,11 @@ export default ({ children, title = 'New Hacker News' }) => (
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         crossOrigin="anonymous"
       />
+      <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+        rel="stylesheet"
+      />
+
       <script
         src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -50,7 +55,7 @@ export default ({ children, title = 'New Hacker News' }) => (
     `}</style>
     <style global jsx>{`
       body {
-        font-family: Verdana, Geneva, sans-serif;
+        font-family: 'Open Sans', sans-serif;
         font-size: 0.85rem;
         background-color: #f6f6ef;
       }
