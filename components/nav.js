@@ -4,10 +4,12 @@ export default () => {
   return (
     <>
       <nav className="navbar navbar-custom navbar-light navbar-expand-lg py-0">
-        <a className="navbar-brand" href="/">
-          <img className="logo" src="/static/img/yc_logo.svg" />
-          <span className="yc-name">New Hacker News</span>
-        </a>
+        <Link href="/">
+          <a className="navbar-brand">
+            <img className="logo" src="/static/img/yc_logo.svg" />
+            <span className="yc-name">New Hacker News</span>
+          </a>
+        </Link>
         <button
           className="navbar-toggler custom-toggler"
           type="button"
@@ -36,9 +38,9 @@ export default () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item">
-              <a className="nav-link" href="/new">
-                new
-              </a>
+              <Link href="/new">
+                <a className="nav-link">new</a>
+              </Link>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
