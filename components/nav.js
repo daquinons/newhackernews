@@ -4,7 +4,7 @@ export default () => {
   return (
     <>
       <nav className="navbar navbar-custom navbar-light navbar-expand-lg py-0">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/">
           <img className="logo" src="/static/img/yc_logo.svg" />
           <span className="yc-name">New Hacker News</span>
         </a>
@@ -36,7 +36,7 @@ export default () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="/new">
                 new
               </a>
             </li>

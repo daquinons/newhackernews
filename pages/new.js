@@ -1,6 +1,6 @@
 import React from 'react';
 import PageList from '../components/pageList';
-import { getFrontpage } from '../services/api';
+import { getNewPage } from '../services/api';
 
 export default class Index extends React.Component {
   constructor(props) {
@@ -8,6 +8,6 @@ export default class Index extends React.Component {
   }
 
   render() {
-    return <PageList api={getFrontpage} />;
+    return <PageList api={getNewPage} />;
   }
 }
